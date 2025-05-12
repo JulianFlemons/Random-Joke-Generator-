@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>😂 Random Joke Generator</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>😂 Random Joke Generator</h1>
+        <h2>{{ setup }}</h2>
+        <p><strong>{{ punchline }}</strong></p>
+        <form method="get" action="/">
+            <button type="submit">Get Another Joke</button>
+        </form>
+    </div>
+</body>
+</html>
